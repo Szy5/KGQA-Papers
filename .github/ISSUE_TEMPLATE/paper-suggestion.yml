@@ -1,0 +1,57 @@
+name: Paper suggestion
+description: Suggest a KGQA paper for the list
+title: "[Paper] "
+labels:
+  - paper-suggestion
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Paper title
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Canonical paper URL
+      description: Prefer an arXiv abstract page or official publisher page.
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: First public release date
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Suggested topic
+      options:
+        - Training and reinforcement learning
+        - Process rewards and search
+        - Data, benchmarks, and evaluation
+        - Training-free agentic exploration
+        - Retrieval, path generation, and GNN retrievers
+        - Semantic parsing and Text-to-SPARQL
+        - Incomplete, noisy, or open-world KGs
+        - Temporal KGQA
+        - Trustworthy, private, federated, or domain KGQA
+        - Self-play and self-evolution
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: KGQA relevance and contribution
+      description: Briefly explain what the paper contributes and why it belongs.
+    validations:
+      required: true
+  - type: textarea
+    id: limitation
+    attributes:
+      label: Limitation or open question
+      description: Prefer an author-stated limitation and say when this is your inference.
+    validations:
+      required: true

@@ -1,0 +1,8 @@
+# Keep this repository lightweight: link to papers instead of storing binaries.
+*.pdf
+
+# Local tooling
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
