@@ -302,3 +302,9 @@ Suggestions and corrections are welcome. Please read [CONTRIBUTING.md](CONTRIBUT
 ## Scope and provenance
 
 The initial collection was assembled using arXiv keyword searches, citation chasing from representative KGQA systems, and manual screening. Each annotation is based on the abstract and, when available, the paper's limitations/conclusion sections; it is not a substitute for a full-paper review.
+
+### 13. Search Agent
+
+| 日期 | 论文 (arXiv) | 一句话 |
+|---|---|---|
+|2026-04-14|Cycle-Consistent Search ([2604.12967](https://arxiv.org/abs/2604.12967))| 通过从搜索轨迹反向重构原问题来衡量检索质量，并将重构相似度作为强化学习奖励，从而在没有标准答案的情况下训练搜索智能体.|
